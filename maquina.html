@@ -1,0 +1,32 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100">
+        <nav class="bg-white p-4 flex justify-between p-4 items-center">
+            <ul class="flex justify-start flex-wrap w-full space-x-4">
+                <li><a href="./index.html" class="text-2xl font-bold text-center">home</a></li>
+                <li><a href="./busqueda.html" class="text-2xl font-bold text-center">busqueda</a></li>
+                <li><a href="./maquina.html" class="text-2xl font-bold text-center">maquina</a></li>
+            </ul>
+        </nav>
+        <div class="p-10 max-w-2xl mx-auto">
+            <div id="grid-sonidos" class="grid grid-cols-2 gap-4 mb-8">
+                <button class="sonido-btn bg-gray-200 text-white p-8 rounded-lg font-bold" id="Riff de Guitarra" onclick="ActivarSonido(event)">Riff de Guitarra</button>
+                <button class="sonido-btn bg-gray-200 text-white p-8 rounded-lg font-bold" id="Doble Bombo" onclick="ActivarSonido(event)">Doble Bombo</button>
+                <button class="sonido-btn bg-gray-200 text-white p-8 rounded-lg font-bold" id="Grito del Público" onclick="ActivarSonido(event)">Grito del Público</button>
+                <button class="sonido-btn bg-gray-200 text-white p-8 rounded-lg font-bold" id="Fuego" onclick="ActivarSonido(event)">Fuego</button>
+            </div>
+            <div class="p-4 rounded text-center font-mono text-xl mb-4" id="pantalla">
+                Sistema en espera...
+            </div>
+            <label class="block mb-2 font-bold">Nivel de Distorsión:</label>
+            <input type="range" id="distorsion" min="0" max="100" value="0" class="w-full" oninput="ActualizarDistorsion(event)">
+            <p id="texto-distorsion" class="mt-2 font-bold">Nivel de Distorsión: 0%</p>
+        </div>
+        <script src="./login.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100">
+        <nav class="bg-white p-4 flex justify-between p-4 items-center">
+            <ul class="flex justify-start flex-wrap w-full space-x-4">
+                <li><a href="./index.html" class="text-2xl font-bold text-center">home</a></li>
+                <li><a href="./busqueda.html" class="text-2xl font-bold text-center">busqueda</a></li>
+                <li><a href="./maquina.html" class="text-2xl font-bold text-center">maquina</a></li>
+            </ul>
+        </nav>
+        <div class="p-10 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Inventario del Stage Manager</h2>
+            <input type="text" id="buscador" oninput="BuscarEquipo(event)" class="w-full p-3 border border-gray-300 rounded mb-6 shadow-sm">
+            <ul id="lista-equipo" class="bg-white rounded shadow-md divide-y divide-gray-200">
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Amplificador Marshall</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Batería Tama</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Bajo ESP</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Cables XLR</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Pirotecnia</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Púas de Kirk</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Pedalera Wah-Wah</li>
+                <li class="item-equipo p-4 cursor-pointer hover:bg-gray-100" onclick="MarcarCargado(event)">Micrófono Shure</li>
+            </ul>
+        </div>
+        <script src="./login.js" defer></script>
+    </body>
+</html>
